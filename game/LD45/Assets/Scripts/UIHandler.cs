@@ -143,7 +143,7 @@ public class UIHandler : MonoBehaviour
     public void Victory()
     {
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        if (SceneManager.sceneCount > nextSceneIndex)
+        if (Application.levelCount > nextSceneIndex)
         {
             okText.text = "Victory!";
             okOperation = OkOperation.WIN;
